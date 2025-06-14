@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	openssl		# system OpenSSL instead of internal ByoCrypto
+%bcond_without	openssl		# system OpenSSL instead of internal ByoCrypto
 %bcond_without	tests		# unit tests
 #
 Summary:	AWS C CAL (Crypto Abstraction Layer)
@@ -25,7 +25,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 AWS Crypto Abstraction Layer: Cross-Platform, C99 wrapper for
 cryptography primitives.
-
 
 %description -l pl.UTF-8
 AWS Crypto Abstraction Layer - wieloplatformowy interfejs C99 do
