@@ -80,6 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_libdir}/libaws-c-cal.so
-%dir %{_includedir}/aws
 %{_includedir}/aws/cal
 %{_libdir}/cmake/aws-c-cal
