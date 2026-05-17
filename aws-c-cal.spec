@@ -6,13 +6,13 @@
 Summary:	AWS C CAL (Crypto Abstraction Layer)
 Summary(pl.UTF-8):	Biblioteka AWS C CAL (Crypto Abstraction Layer - warstwa abstrakcji kryptografii)
 Name:		aws-c-cal
-Version:	0.9.2
+Version:	0.9.13
 Release:	1
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/awslabs/aws-c-cal/releases
 Source0:	https://github.com/awslabs/aws-c-cal/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	63350b547630e002c0af0c63e24cd41b
+# Source0-md5:	82817a82db826d90d3a5ed715e0db0a2
 URL:		https://github.com/awslabs/aws-c-cal
 BuildRequires:	aws-c-common-devel
 BuildRequires:	cmake >= 3.9
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NOTICE README.md
-%attr(755,root,root) %{_libdir}/libaws-c-cal.so.1.0.0
+%{_libdir}/libaws-c-cal.so.1.0.0
 
 %files devel
 %defattr(644,root,root,755)
