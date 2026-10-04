@@ -14,7 +14,7 @@ Group:		Libraries
 Source0:	https://github.com/awslabs/aws-c-cal/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	95ea309c67a11708a00a38643be79b30
 URL:		https://github.com/awslabs/aws-c-cal
-BuildRequires:	aws-c-common-devel
+BuildRequires:	aws-c-common-devel >= 1.0
 BuildRequires:	cmake >= 3.9
 BuildRequires:	gcc >= 5:3.2
 # also aws-lc possible (with -DUSE_OPENSSL=OFF)
@@ -35,7 +35,7 @@ Summary:	Header files for AWS C CAL library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki AWS C CAL
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	aws-c-common-devel
+Requires:	aws-c-common-devel >= 1.0
 %{?with_openssl:Requires:	openssl-devel >= 1.0.2}
 
 %description devel
